@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="layout, multi-layer PSD">
+	<meta name="description" content="Верстка по многослойному PSD. Layout for multi-layer PSD">
+	<meta name="robots" content="index,follow" >
+	<title>Верстка по многослойному PSD. С использованием SASS исходников Фреймворка Bootstrap4 и jQuery.</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header class="header wrapper-content">
+	<div class="row-first">
+		<div class="container content">
+			<div class="row">
+				<div class="col-3 col-first"></div>
+				<div class="col-3 col-two">
+					<h5>Сервис Volkswagen</h5>
+					<p>ремонт VOLKSWAGEN в Новочеркасске</p>
+				</div>
+				<div class="col-3 col-three"></div>
+				<div class="col-3 col-four">
+					<h5>+7 (988) 517-91-12</h5>
+					<p>Запись на ТО или ремонт</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container content">
+		<div class="row row-two">
+			<div class="col-6 offset-3 col-two">
+				<nav class="nav">
+					<a class="nav-link active" href="#">О сервисе</a>
+					<a class="nav-link" href="#tires">Летняя резина</a>
+					<a class="nav-link" href="#contacts">Контакты</a>
+				</nav>
+			</div>
+			<div class="col-3 col-four">
+				<div class="btn-toolbar justify-content-end" role="toolbar" aria-label="Toolbar with button groups">
+					<div class="btn-group social" role="group" aria-label="facebook">
+						<a class="btn social-icon facebook" href="http://facebook.com/" target="_blank" role="button"></a>
+					</div>
+					<div class="btn-group social" role="group" aria-label="vk">
+						<a class="btn social-icon vk" href="http://vk.com/" target="_blank" role="button"></a>
+					</div>
+					<div class="btn-group social" role="group" aria-label="ok">
+						<a class="btn social-icon ok" href="http://ok.ru/" target="_blank" role="button"></a>
+					</div>
+					<div class="btn-group social" role="group" aria-label="youtube">
+						<a class="btn social-icon youtube" href="http://youtube.com/" target="_blank" role="button"></a>
+					</div>
+					<div class="btn-group social" role="group" aria-label="instagram">
+						<a class="btn social-icon instagram" href="http://instagram.com/" target="_blank" role="button"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row-three">
+		<div class="container content">
+			<div class="row">
+				<div class="col-6 col-first">
+					<div class="container-carousel">
+						<div id="carouselHeader" class="carousel header-carousel slide" data-ride="carousel" data-target-control-button="#controlCarouselHeader">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<h4>Валерий Логинов</h4>
+									<p>Ваш персональный менеджер по марке VOLKSWAGEN. О ремонте автомобилей VOLKSWAGEN я знаю все!<br>
+									Позвоните мне сейчас и я сделаю вам<br>
+									СКИДКУ 10% на все работы и материалы!</p>
+									<h5>+7 (988) 517-91-12</h5>
+								</div>
+								<div class="carousel-item">
+									<h4>Сервисное ТО вашего Volkswagen</h4>
+									<p>Разместите здесь описанеие...</p>
+								</div>
+								<div class="carousel-item">
+									<h4>Сервис Volkswagen</h4>
+									<p>Разместите здесь описанеие...</p>
+								</div>
+								<div class="carousel-item">
+									<h4>Запчасти Volksvagen</h4>
+									<p>Разместите здесь описанеие...</p>
+								</div>
+							</div>
+							<a class="control-prev" href="#carouselHeader" role="button" data-slide="prev">
+								<span class="control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="control-next" href="#carouselHeader" role="button" data-slide="next">
+								<span class="control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container content">
+		<div id="controlCarouselHeader" class="row row-four">
+			<div class="col col-first">
+				<button type="button" class="btn button-first active" data-target="#carouselHeader" data-slide-to="0">Персональный менеджер</button>
+			</div>
+			<div class="col col-two">
+				<button type="button" class="btn button-two" data-target="#carouselHeader" data-slide-to="1">Сервисное то вашего Volkswagen</button>
+			</div>
+			<div class="col col-three">
+				<button type="button" class="btn button-three" data-target="#carouselHeader" data-slide-to="2">Сервис Volkswagen</button>
+			</div>
+			<div class="col col-four">
+				<button type="button" class="btn button-four" data-target="#carouselHeader" data-slide-to="3">Запчасти Volksvagen</button>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="wrapper-content bg-main-content">
+	<div id="parallaxContentFirst" class="content-first" data-parallax="true" data-bg-img-height="1210">
+		<div class="container content">
+			<div class="row row-first">
+				<div class="col">
+					Ремонт автомобилей VOLKSVAGEN в Новочеркасске
+				</div>
+			</div>
+			<div class="row row-two">
+				<div class="col-6 col-first">
+					Квалифицированные специалисты,<br>
+					прошедшие обучение по марке<br>
+					VOLKSWAGEN
+				</div>
+				<div class="col-6 col-two">
+					Оригинальные масла и жидкости,<br>
+					а также качественные<br>
+					неоригинальные
+				</div>
+			</div>
+			<div class="row row-three">
+				<div class="col-6 col-first">
+					Всегда в наличии шины, диски и<br>
+					расходные материалы для ТО<br>
+					вашего VOLKSVAGEN
+				</div>
+				<div class="col-6 col-two">
+					Оригинальные запчасти VOLKSVAGEN<br>
+					и качественные аналоги проверенные<br>
+					временем
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-two">
+		<div class="container content">
+			<div class="row row-first">
+				<div class="col">
+					Услуги по обслуживанию VOLKSWAGEN
+				</div>
+			</div>
+			<div class="row row-two">
+				<div class="col-6 col-first">
+					Регулярное техническое<br>
+					обслуживание
+				</div>
+				<div class="col-6 col-four">
+					Замена ремня ГРМ
+				</div>
+			</div>
+			<div class="row row-three">
+				<div class="col-6 col-first">
+					Замена расходных<br>
+					материалов
+				</div>
+				<div class="col-6 col-four">
+					Замена колодок<br>
+					и дисков
+				</div>
+			</div>
+			<div class="row row-four">
+				<div class="col-3 col-first">
+					Замена масел<br>
+					и тех.жидкостей
+				</div>
+				<div class="col-3 col-two">
+					Ремонт ходовой
+				</div>
+				<div class="col-3 col-three">
+					Шиномонтаж
+				</div>
+				<div class="col-3 col-four">
+					Заправка<br>
+					кондиционеров
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="parallaxContentThree" class="content-three" data-parallax="true" data-bg-img-height="900"><a name="tires"></a>
+		<div class="container content">
+			<div class="row row-first">
+				<div class="col">
+					Лучшие летние шины для вашего VOLKSWAGEN только у нас
+				</div>
+			</div>
+			<div class="row row-two">
+				<div class="col-6 col-first">
+					<div class="row row-two-first">
+						<div class="col col-first-first">
+							<h6>Volksvagen<br>
+							Touareg</h6>
+							<p>235/65 R17</p>
+							<p>255/60 R17</p>
+						</div>
+					</div>
+					<div class="row row-two-two">
+						<div class="col col-first-two">
+							<h6>Volksvagen Jetta</h6>
+							<p>195/65 R15</p>
+						</div>
+					</div>
+					<div class="row row-two-three">
+						<div class="col col-first-three">
+							<h6>Volksvagen Polo<br>
+							sedan</h6>
+							<p>175/70 R17</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 col-three">
+					<div class="row row-two-first">
+						<div class="col col-three-first">
+							<img src="images/content-three-col-3-img-1.png" width="207" height="101" alt="Volksvagen Touareg ">
+						</div>
+					</div>
+					<div class="row row-two-two">
+						<div class="col col-three-two">
+							<img src="images/content-three-col-3-img-2.png" width="188" height="84" alt="Volksvagen Jetta">
+						</div>
+					</div>
+					<div class="row row-two-three">
+						<div class="col col-three-three">
+							<img src="images/content-three-col-3-img-3.png" width="204" height="105" alt="Volksvagen Polo sedan">
+						</div>
+					</div>
+				</div>
+				<div class="col-3 col-four">
+					<div class="row row-two-first">
+						<div class="col col-four-first">
+							<h6>Bridgestone</h6>
+							<p>BFGoodrich</p>
+							<p>Tigar</p>
+							<p>Nokian</p>
+							<p>Nordman</p>
+							<p>Michelin</p>
+							<p>Yokohama</p>
+							<p>Dunlop</p>
+							<p>Continental</p>
+							<p>Gislaved</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-four">
+		<div class="container content">
+			<div class="row row-first">
+				<div class="col-6 col-first">
+					<p>На другие модели VOLKSWAGEN цены и наличие<br>
+					уточняйте у менеджера.</p>
+					<h5>+7 (988) 517-91-12</h5>
+				</div>
+				<div class="col-6 col-three">
+					<p>В сервисном  центре «Автолюкс» вы  получите грамотную  консультацию мастеров, прошедших профессиональное обучение. Вы сможете заказать оригинальные запчасти и расходные материалы для автомобиля Volkswagen, а так же качественные  аналоги  мировых производителей.  Доставка от 1 дня. <span>Ваш персональный менеджер всегда на связи!</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-five">
+		<div class="container content">
+			<div class="row row-first">
+				<div class="col">
+					VOLKSWAGEN рекомендует тех.жидкости и масла CASTROL
+				</div>
+			</div>
+			<div class="row row-two">
+				<div class="col-first">
+					<img src="images/content-five-img-2.png" width="410" height="420" alt="CASTROL">
+				</div>
+				<div class="col-two">
+					<img src="images/content-five-img-1.jpg" width="730" height="418" alt="Volksvagen Polo sedan">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-six"><a name="contacts"></a>
+		<div class="container content">
+			<div class="row row-first">
+				<div class="col">
+					Сервис VOLKSWAGEN в Автолюкс: Баклановский 14
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="footer wrapper-content">
+	<div class="container content">
+		<div class="row row-first">
+			<div class="col-3 col-first">
+				<img src="images/footer-Autolux.png" width="268" height="59" alt="Автолюкс">
+			</div>
+			<div class="col-6 col-two">
+				<h5>Cервис VOLKSVAGEN в Автолюкс</h5>
+				<p>ремонт NISSAN в Новочеркасске</p>
+			</div>
+			<div class="col-3 col-four">
+				<div class="row row-first-first">
+					<div class="col col-four-first">
+						<div class="btn-toolbar justify-content-end" role="toolbar" aria-label="Toolbar with button groups">
+							<div class="btn-group social" role="group" aria-label="facebook">
+								<a class="btn social-icon facebook" href="http://facebook.com/" target="_blank" role="button"></a>
+							</div>
+							<div class="btn-group social" role="group" aria-label="vk">
+								<a class="btn social-icon vk" href="http://vk.com/" target="_blank" role="button"></a>
+							</div>
+							<div class="btn-group social" role="group" aria-label="ok">
+								<a class="btn social-icon ok" href="http://ok.ru/" target="_blank" role="button"></a>
+							</div>
+							<div class="btn-group social" role="group" aria-label="youtube">
+								<a class="btn social-icon youtube" href="http://youtube.com/" target="_blank" role="button"></a>
+							</div>
+							<div class="btn-group social" role="group" aria-label="instagram">
+								<a class="btn social-icon instagram" href="http://instagram.com/" target="_blank" role="button"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row-first-two">
+					<div class="col col-four-two">
+						<h5>(928) 182-15-77</h5>
+						<p>ул. Баклановский, 14</p>
+						<p>Пн-пт: 8.00-20.00 | Сб-вс: 9.00-18.00</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> -->
+<!-- <script src="assets/jquery/jquery.js" type="text/javascript"></script> -->
+<!-- <script src="assets/bootstrap4/js/bootstrap.js" type="text/javascript"></script> -->
+<!-- <script src="assets/bootstrap4/js/bootstrap.bundle.js" type="text/javascript"></script> -->
+<!-- <script src="js/index.js" type="text/javascript"></script> -->
+<script src="js/index.min.js" type="text/javascript"></script>
+</body>
+</html>
