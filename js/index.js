@@ -40,27 +40,26 @@ $(document).ready(function() {
   });
 
 
-/**
- * Формирование гл.массива элементов с эффектом "Паралакса"
- */
- window.elem_parallax = [];
- $('body').find('div[data-parallax]').each(function(i,elem) {
-   if ($(elem).attr('id')) {
-     window.elem_parallax.push('#' + $(elem).attr('id'));
-   }
- });
+  /**
+   * Формирование гл.массива элементов с эффектом "Паралакса"
+   */
+  window.elem_parallax = [];
+  $('body').find('div[data-parallax]').each(function(i,elem) {
+    if ($(elem).attr('id')) {
+      window.elem_parallax.push('#' + $(elem).attr('id'));
+    }
+  });
 
 
-/**
- * Обработчик прокрутки страницы
- * Добавление эффекта Паралакса
- */
+  /**
+   * Обработчик прокрутки страницы
+   * Добавление эффекта Паралакса
+   */
   $(window).scroll(function () {
     //В цикле по элементам с эффектом "Паралакса"
     for (let i = 0; i < window.elem_parallax.length; i++) {
       if ($(window.elem_parallax[i]).data('bgImgHeight')) {
-        let offset_elem = $(window.elem_parallax[i]).offset();
-        let elem_top = offset_elem.top;
+        let elem_top = $(window.elem_parallax[i]).offset().top;
         let elem_height = $(window.elem_parallax[i]).innerHeight();
         let img_height = $(window.elem_parallax[i]).data('bgImgHeight');
         let window_height = window.innerHeight;
@@ -82,6 +81,21 @@ $(document).ready(function() {
         }
       }
     }
+  });
+
+
+  /**
+   * Прокрутка страницы до Якоря
+   */
+  $("a[data-scroll-to-anchor]").click(function(e) {
+    $("html, body").animate({
+      scrollTop: $($(this).attr("href")).offset().top + "px"
+    }, {
+      duration: 1000,
+      easing: "swing"
+    });
+    e.preventDefault();
+    return false;
   });
 });
 });
