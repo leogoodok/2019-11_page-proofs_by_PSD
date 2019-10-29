@@ -63,16 +63,17 @@ $(document).ready(function() {
         let elem_height = $(window.elem_parallax[i]).innerHeight();
         let img_height = $(window.elem_parallax[i]).data('bgImgHeight');
         let window_height = window.innerHeight;
-        let start_path_elem = (window_height > elem_top) ? (window_height - elem_top) : 0;
-        let path_elem = -start_path_elem + window_height + elem_height;
-        let path_img = img_height - elem_height;
-        let coeff = path_img / path_elem;
         let offset_scroll = (elem_top > window_height) ? (elem_top - window_height) : 0;
         let scroll_y = $(this).scrollTop();
-        path_img = Math.floor(path_img);
+        //Проверка "элемент отображается на экране" - выполнить смещение изображения фона
         if (scroll_y > offset_scroll && scroll_y <= (elem_top + elem_height)) {
+          let start_path_elem = (window_height > elem_top) ? (window_height - elem_top) : 0;
+          let path_elem = -start_path_elem + window_height + elem_height;
+          let path_img = img_height - elem_height;
+          let coeff = path_img / path_elem;
           let movement = -Math.floor((scroll_y - offset_scroll) * coeff);
-          //! Проверка не обязательна! movement расчитывается корректно.
+          //! Проверка не обязательна! movement рассчитывается корректно.
+          path_img = Math.floor(path_img);
           if (movement > 0) movement = 0;
           if (movement < -path_img) movement = -path_img;
           $(window.elem_parallax[i]).css({
@@ -85,7 +86,8 @@ $(document).ready(function() {
 
 
   /**
-   * Прокрутка страницы до Якоря
+  * Назначение обработчика клика на ссылке
+  * Прокрутки страницы до Якоря
    */
   $("a[data-scroll-to-anchor]").click(function(e) {
     $("html, body").animate({
