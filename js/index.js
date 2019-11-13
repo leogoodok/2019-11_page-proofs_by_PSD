@@ -44,7 +44,7 @@ $(document).ready(function() {
    * Формирование гл.массива элементов с эффектом "Паралакса"
    */
   window.elem_parallax = [];
-  $('body').find('div[data-parallax]').each(function(i,elem) {
+  $('body').find('section[data-parallax]').each(function(i,elem) {
     if ($(elem).attr('id')) {
       window.elem_parallax.push('#' + $(elem).attr('id'));
     }
